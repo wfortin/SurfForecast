@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Surf Forcast</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- App references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/jquery-1.8.0.min.js"></script>
+    <script src="/js/actions.js"></script>
+    <script src="/js/forecast.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+	<div class="slidePanel" style="top: 0px;">
+		<h1>Select spot</h1>
+        <div data-win-control="WinJS.UI.ListView">
+            <!--<ul>
+			    <li>New england
+				    <ul>
+					    <li>Fortunes Rock</li>
+					    <li>Higgins Beach</li>
+					    <li>Kennebunk Beach</li>
+					    <li>Long Sands</li>
+					    <li>Ogunquit River</li>
+					    <li>Old Orchard Beach</li>
+                        <li>Popham Beach</li>
+                        <li>Scarborough Beach</li>
+                        <li>Short Sands</li>
+				    </ul>
+			    </li>
+            </ul>-->
+        </div>
+	</div>
+    <div id="mainContent">
+        <header aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis"><span class="pagetitle">SURF FORECAST</span><div id="logo"></div></h1>
+            <h2 onclick="selectSpot();"><img class="icon" src="/images/location.png"/> Current spot : Ogunquit River</h2>
+        </header>
+        <section aria-label="Main content" role="main">
+			<h1>Today</h1>
+            <div id="today" class="day" aria-label="Today section">
+				<div class="forecast">
+					<div class="data">
+						<h2>Swell</h2>
+						<p>
+							<span class="swell_0">0</span> ft.
+						</p>
+					</div>
+					<div class="data">
+						<h2>Period</h2>
+						<p>
+							<span class="period_0">0</span><small>secs.</small>
+						</p>
+					</div>
+					<div class="data">
+						<h2>Rating</h2>
+						<p>
+							<span class="rating_0"><img src="/images/stars/0.png"/></span>
+						</p>
+					</div>
+					<div class="data">
+						<h2>Wind</h2>
+						<p>
+							<span class="wind_0">0</span><small>mph</small>
+						</p>
+					</div>
+					<div class="data">
+						<h2>Direction</h2>
+						<p>
+							<span class="direction_0">0</span>
+						</p>
+					</div>
+				</div>
+            </div>
+            <div id="week" aria-label="Location section">
+				<h1>This week</h1>
+					<div class="data day">	
+						<h2 id="day_0"></h2>
+						<table>
+							<tbody>
+								<tr>
+									<td>Swell</td>
+									<td class="value"><b class="swell_0">0</b>ft.</td>
+								</tr>
+								<tr>
+									<td>Period</td>
+									<td class="value"><b class="period_0">0</b> secs.</td>
+								</tr>
+								<tr>
+									<td>Rating</td>
+									<td class="value"><span class="rating_0"><img src="/images/stars/0.png"/></span></td>
+								</tr>
+								<tr>
+									<td>Wind</td>
+									<td class="value"><b class="wind_0">0</b> mph</td>
+								</tr>
+								<tr>
+									<td>Direction</td>
+									<td class="value"><b class="direction_0">0</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="data day">
+						<h2 id="day_1"></h2>
+                        <table>
+							<tbody>
+								<tr>
+									<td>Swell</td>
+									<td class="value"><b class="swell_1">0</b>ft.</td>
+								</tr>
+								<tr>
+									<td>Period</td>
+									<td class="value"><b class="period_1">0</b> secs.</td>
+								</tr>
+								<tr>
+									<td>Rating</td>
+									<td class="value"><span class="rating_1"><img src="/images/stars/0.png"/></span></td>
+								</tr>
+								<tr>
+									<td>Wind</td>
+									<td class="value"><b class="wind_1">0</b> mph</td>
+								</tr>
+								<tr>
+									<td>Direction</td>
+									<td class="value"><b class="direction_1">0</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="data day">
+						<h2 id="day_2"></h2>
+                        <table>
+							<tbody>
+								<tr>
+									<td>Swell</td>
+									<td class="value"><b class="swell_2">0</b>ft.</td>
+								</tr>
+								<tr>
+									<td>Period</td>
+									<td class="value"><b class="period_2">0</b> secs.</td>
+								</tr>
+								<tr>
+									<td>Rating</td>
+									<td class="value"><span class="rating_2"><img src="/images/stars/0.png"/></span></td>
+								</tr>
+								<tr>
+									<td>Wind</td>
+									<td class="value"><b class="wind_2">0</b> mph</td>
+								</tr>
+								<tr>
+									<td>Direction</td>
+									<td class="value"><b class="direction_2">0</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="data day">
+						<h2 id="day_3"></h2>
+                        <table>
+							<tbody>
+								<tr>
+									<td>Swell</td>
+									<td class="value"><b class="swell_3">0</b>ft.</td>
+								</tr>
+								<tr>
+									<td>Period</td>
+									<td class="value"><b class="period_3">0</b> secs.</td>
+								</tr>
+								<tr>
+									<td>Rating</td>
+									<td class="value"><span class="rating_3"><img src="/images/stars/0.png"/></span>s</td>
+								</tr>
+								<tr>
+									<td>Wind</td>
+									<td class="value"><b class="wind_3">0</b> mph</td>
+								</tr>
+								<tr>
+									<td>Direction</td>
+									<td class="value"><b class="direction_3">0</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="data day">
+						<h2 id="day_4"></h2>
+                        <table>
+							<tbody>
+								<tr>
+									<td>Swell</td>
+									<td class="value"><b class="swell_4">0</b>ft.</td>
+								</tr>
+								<tr>
+									<td>Period</td>
+									<td class="value"><b class="period_4">0</b> secs.</td>
+								</tr>
+								<tr>
+									<td>Rating</td>
+									<td class="value"><span class="rating_4"><img src="/images/stars/0.png"/></span></td>
+								</tr>
+								<tr>
+									<td>Wind</td>
+									<td class="value"><b class="wind_4">0</b> mph</td>
+								</tr>
+								<tr>
+									<td>Direction</td>
+									<td class="value"><b class="direction_4">0</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

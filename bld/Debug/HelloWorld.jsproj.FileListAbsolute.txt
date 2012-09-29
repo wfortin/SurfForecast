@@ -1,0 +1,13 @@
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bin\Debug\resources.pri
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bin\Debug\AppxManifest.xml
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bin\Debug\HelloWorld.build.appxrecipe
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\priconfig.xml
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\layout.resfiles
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\resources.resfiles
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\pri.resfiles
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\LanguageQualifiers.txt
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\ProjectArchitectures.txt
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\priconfig.xml.intermediate
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\layout.resfiles.intermediate
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\resources.resfiles.intermediate
+C:\Users\William\documents\visual studio 2012\Projects\HelloWorld\HelloWorld\bld\Debug\pri.resfiles.intermediate

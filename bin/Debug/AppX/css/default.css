@@ -1,0 +1,186 @@
+﻿html, body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow:hidden;
+}
+
+body {
+	padding : 0;
+	margin : 0;
+    background-color : #00D5FF;
+	background : url("/images/surfforecast_bg.jpg");
+	background-size : 100% auto;
+	width : 96%;
+	height : 96%;
+	overflow-y : scroll;
+	overflow-x : hidden;
+	width : 100%;
+	float : right;
+}
+
+.slidePanel{
+	display : block;
+	overflow : hidden;
+	width : 0%;
+	height : 100%;
+	float : left;
+	background-color : rgba(0, 213, 255, 0.502);
+	position : absolute;
+	left : 0px;
+}
+
+.slidePanel > h1{
+	height : 80px;
+	overflow : hidden;
+}
+
+.titlearea{
+	background-color : rgba(0, 213, 255, 0.502);
+}
+
+h2{
+	font-size : 28px;
+}
+.pagetitle{
+	font-weight : bolder;
+}
+
+.icon{
+	margin-top : 10px;
+	height: 28px; 
+	width: 28px; 
+}
+
+.day{
+	margin-top : 5px;
+	background-color : rgba(0, 213, 255, 0.502);
+	padding : 10px;
+	height : 220px;
+}
+
+.data{
+	float : left;
+	width : 19%;
+}
+
+#week > .data{
+	padding : 1px;
+	margin-right : 7px;
+}
+
+.forecast > .data img{
+	height : 45px;
+}
+
+#week > .data img{
+	height : 20px;
+}
+
+#logo{
+	width : 80px;
+	height : 80px;
+	background : url("/images/logo.png");
+	background-size : 100% 100%;
+	float : right;
+}
+	
+.data > p, .data > span{
+	font-size : 60px;
+	font-weight : bolder;
+	padding : 5px;
+	margin : 0px;
+	float : left;
+	overflow : hidden;
+}
+
+.forecast{
+	height : 200px;	
+}
+
+.value{
+	font-weight : bold;
+}
+	
+small{
+	font-size : 50%;
+}
+
+table{
+	font-size : 18px;
+}
+table td {
+	width: 70%;
+	overflow: hidden;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+	body{
+		background-size : auto 100;	
+	}
+	#week > .data{
+		height : 250px;	
+	}
+	.forecast > .data img{
+		height : 40px;
+	}
+}
+
+@media screen and (-ms-view-state: snapped) {
+	body{
+		overflow-y : scroll;
+		background-size : auto 100%;
+		background-position : 60% 50%;
+	}
+	h2{
+		font-size : 18px;
+	}
+	.forecast{
+		height : 160px;
+		overflow-y : scroll;
+	}
+	.day{
+		width : 100%;
+		height : auto;
+		overflow-y : scroll;
+	}
+	.forecast .data{
+		width : 33%;
+	}
+	.data p{
+		font-size : 35px;	
+	}
+	.forecast > .data img{
+		height : 20px;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+	body{
+		background-size : auto 100%;
+		background-position : 50% 50%;
+	}
+	.data > p, .data > span{
+		font-size : 45px;	
+	}
+	.day{
+		height : 130px;	
+	}
+	.data{
+		float : left;
+		width : 18%;
+	}
+	#week > .data{
+		height : 280px;
+		width : 30%;
+	}
+	.forecast > .data img{
+		height : 24px;
+	}
+	#week > .data img{
+		height : 24px;
+	}
+}
